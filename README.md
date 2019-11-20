@@ -43,6 +43,7 @@ $ python ocr_basic.py --image images/image.jpgsevensegthres.jpg --psm 10 --lang 
 ```YAML
 $ python ocr.py -h
 ```
+
 > ```YAML
 > usage: ocr.py [-h] --image IMAGE [--preprocess PREPROCESS] [--psm PSM]
 >               [--lang LANG]
