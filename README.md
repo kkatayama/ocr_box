@@ -12,14 +12,14 @@ $ python ocr_test.py
 $ python ocr_basic.py -h
 ```
 > ```YAML
-usage: ocr_basic.py [-h] --image IMAGE [--psm PSM] [--lang LANG]
-
-optional arguments:
-  -h, --help     show this help message and exit
-  --image IMAGE  path to image file
-  --psm PSM      Page segmentation mode
-  --lang LANG    language
-```
+> usage: ocr_basic.py [-h] --image IMAGE [--psm PSM] [--lang LANG]
+> 
+> optional arguments:
+>   -h, --help     show this help message and exit
+>   --image IMAGE  path to image file
+>   --psm PSM      Page segmentation mode
+>   --lang LANG    language
+> ```
 ```YAML
 $ python ocr_basic.py --image images/image.jpgsevensegthres.jpg --psm 10 --lang ssd
 ```
