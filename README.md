@@ -133,6 +133,6 @@ Single options:
 ```YAML
 $ tesseract images/image.jpgsevensegthres.jpg stdout --tessdata-dir tessdata_best -l ssd --oem 1 --dpi 72 --psm 10
 ```
-```YAML
-0:44
-````
+> ```YAML
+> 0:44
+> ````
