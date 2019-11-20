@@ -59,7 +59,6 @@ $ python ocr.py -h
 ```YAML
 $ python ocr.py --image images/image.jpgsevensegthres.jpg --preprocess thresh --psm 10 --lang ssd
 ```
-
 > ```YAML
 > 0:44
 > {'level': [1, 2, 3, 4, 5]
