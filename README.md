@@ -23,57 +23,58 @@ $ python ocr_basic.py -h
 ```YAML
 $ python ocr_basic.py --image images/image.jpgsevensegthres.jpg --psm 10 --lang ssd
 ```
-```YAML
-0:44
-{'level': [1, 2, 3, 4, 5]
- 'page_num': [1, 1, 1, 1, 1]
- 'block_num': [0, 1, 1, 1, 1]
- 'par_num': [0, 0, 1, 1, 1]
- 'line_num': [0, 0, 0, 1, 1]
- 'word_num': [0, 0, 0, 0, 1]
- 'left': [0, 284, 284, 284, 284]
- 'top': [0, 18, 18, 18, 18]
- 'width': [996, 686, 686, 686, 686]
- 'height': [301, 242, 242, 242, 242]
- 'conf': ['-1', '-1', '-1', '-1', 96]
- 'text': ['', '', '', '', '0:44']}
-```
+> ```YAML
+> 0:44
+> {'level': [1, 2, 3, 4, 5]
+>  'page_num': [1, 1, 1, 1, 1]
+>  'block_num': [0, 1, 1, 1, 1]
+>  'par_num': [0, 0, 1, 1, 1]
+>  'line_num': [0, 0, 0, 1, 1]
+>  'word_num': [0, 0, 0, 0, 1]
+>  'left': [0, 284, 284, 284, 284]
+>  'top': [0, 18, 18, 18, 18]
+>  'width': [996, 686, 686, 686, 686]
+>  'height': [301, 242, 242, 242, 242]
+>  'conf': ['-1', '-1', '-1', '-1', 96]
+>  'text': ['', '', '', '', '0:44']}
+> ```
 
 ## ocr.py
 ```YAML
 $ python ocr.py -h
 ```
 ```YAML
-usage: ocr.py [-h] --image IMAGE [--preprocess PREPROCESS] [--psm PSM]
-              [--lang LANG]
-
-optional arguments:
-  -h, --help            show this help message and exit
-  --image IMAGE         path to input image to be OCR'd
-  --preprocess PREPROCESS
-                        thresh: preprocess using threshold method
-                        blur: preprocess using blur method
-  --psm PSM             Page segmentation mode
-  --lang LANG           language
-```
+> usage: ocr.py [-h] --image IMAGE [--preprocess PREPROCESS] [--psm PSM]
+>               [--lang LANG]
+> 
+> optional arguments:
+>   -h, --help            show this help message and exit
+>   --image IMAGE         path to input image to be OCR'd
+>   --preprocess PREPROCESS
+>                         thresh: preprocess using threshold method
+>                         blur: preprocess using blur method
+>   --psm PSM             Page segmentation mode
+>   --lang LANG           language
+> ```
 ```YAML
 $ python ocr.py --image images/image.jpgsevensegthres.jpg --preprocess thresh --psm 10 --lang ssd
 ```
-```YAML
-0:44
-{'level': [1, 2, 3, 4, 5]
- 'page_num': [1, 1, 1, 1, 1]
- 'block_num': [0, 1, 1, 1, 1]
- 'par_num': [0, 0, 1, 1, 1]
- 'line_num': [0, 0, 0, 1, 1]
- 'word_num': [0, 0, 0, 0, 1]
- 'left': [0, 284, 284, 284, 284]
- 'top': [0, 18, 18, 18, 18]
- 'width': [996, 686, 686, 686, 686]
- 'height': [301, 242, 242, 242, 242]
- 'conf': ['-1', '-1', '-1', '-1', 96]
- 'text': ['', '', '', '', '0:44']}
-```
+
+> ```YAML
+> 0:44
+> {'level': [1, 2, 3, 4, 5]
+>  'page_num': [1, 1, 1, 1, 1]
+>  'block_num': [0, 1, 1, 1, 1]
+>  'par_num': [0, 0, 1, 1, 1]
+>  'line_num': [0, 0, 0, 1, 1]
+>  'word_num': [0, 0, 0, 0, 1]
+>  'left': [0, 284, 284, 284, 284]
+>  'top': [0, 18, 18, 18, 18]
+>  'width': [996, 686, 686, 686, 686]
+>  'height': [301, 242, 242, 242, 242]
+>  'conf': ['-1', '-1', '-1', '-1', 96]
+>  'text': ['', '', '', '', '0:44']}
+> ```
 
 ## tesseract
 ```YAML
