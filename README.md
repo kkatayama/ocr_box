@@ -11,6 +11,7 @@ $ python ocr_test.py
 ```YAML
 $ python ocr_basic.py -h
 ```
+
 > ```YAML
 > usage: ocr_basic.py [-h] --image IMAGE [--psm PSM] [--lang LANG]
 > 
@@ -23,6 +24,7 @@ $ python ocr_basic.py -h
 ```YAML
 $ python ocr_basic.py --image images/image.jpgsevensegthres.jpg --psm 10 --lang ssd
 ```
+
 > ```YAML
 > 0:44
 > {'level': [1, 2, 3, 4, 5]
@@ -57,9 +59,11 @@ $ python ocr.py -h
 >   --psm PSM             Page segmentation mode
 >   --lang LANG           language
 > ```
+
 ```YAML
 $ python ocr.py --image images/image.jpgsevensegthres.jpg --preprocess thresh --psm 10 --lang ssd
 ```
+
 > ```YAML
 > 0:44
 > {'level': [1, 2, 3, 4, 5]
@@ -80,6 +84,7 @@ $ python ocr.py --image images/image.jpgsevensegthres.jpg --preprocess thresh --
 ```YAML
 $ tesseract --help-extra
 ```
+
 ```YAML
 Usage:
   tesseract --help | --help-extra | --help-psm | --help-oem | --version
@@ -131,9 +136,11 @@ Single options:
   --list-langs          List available languages for tesseract engine.
   --print-parameters    Print tesseract parameters.
 ```
+
 ```YAML
 $ tesseract images/image.jpgsevensegthres.jpg stdout --tessdata-dir tessdata_best -l ssd --oem 1 --dpi 72 --psm 10
 ```
+
 > ```YAML
 > 0:44
 > ````
