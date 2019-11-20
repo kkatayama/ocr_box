@@ -1,93 +1,95 @@
-,tool,filter,psm,ocr_text,predicted_text,confidence_score
-0,tesseract_cli,NA,1,,NA,NA
-1,tesseract_cli,NA,3,,NA,NA
-2,tesseract_cli,NA,4,"e000
-LJI-""1 1
-",NA,NA
-3,tesseract_cli,NA,5,"aX
-<
--
-J
--— ®
-IJ
-",NA,NA
-4,tesseract_cli,NA,6,"e000
-LJI-""1 1
-",NA,NA
-5,tesseract_cli,NA,7,"HY
-",NA,NA
-6,tesseract_cli,NA,8,,NA,NA
-7,tesseract_cli,NA,9,"HY
-",NA,NA
-8,tesseract_cli,NA,10,"HY
-",NA,NA
-9,tesseract_cli,NA,11,"HY
-",NA,NA
-10,tesseract_cli,NA,12,"|
+,tool,filter,psm,ocr_text,predicted_text,confidence_score,lang
+0,tesseract_cli,NA,1,,NA,NA,ssd
+1,tesseract_cli,NA,3,,NA,NA,ssd
+2,tesseract_cli,NA,4,"177:1..11..
+1.177
+",NA,NA,ssd
+3,tesseract_cli,NA,5,"9
+1
+9
+-1°
+0444 0
+1.3
+",NA,NA,ssd
+4,tesseract_cli,NA,6,"177:1..11..
+1.177
+",NA,NA,ssd
+5,tesseract_cli,NA,7,"0:44
+",NA,NA,ssd
+6,tesseract_cli,NA,8,"40:44
+",NA,NA,ssd
+7,tesseract_cli,NA,9,"0:44
+",NA,NA,ssd
+8,tesseract_cli,NA,10,"0:44
+",NA,NA,ssd
+9,tesseract_cli,NA,11,"0:44
+",NA,NA,ssd
+10,tesseract_cli,NA,12,"177:1...11...1
 
-LI-1
-",NA,NA
-11,tesseract_cli,NA,13,,NA,NA
-12,ocr_basic.py,NA,1,,[],[]
-13,ocr_basic.py,NA,3,,[],[]
-14,ocr_basic.py,NA,4,"e000
-LJI-""1 1","['e000', 'LJI-""1', '1']","['33', '0', '63']"
-15,ocr_basic.py,NA,5,"aX
-<
--
-J
--— ®
-IJ","['aX', '<', '-', 'J', '-—', '®', 'IJ']","['48', '38', '78', '77', '38', '48', '46']"
-16,ocr_basic.py,NA,6,"e000
-LJI-""1 1","['e000', 'LJI-""1', '1']","['33', '0', '63']"
-17,ocr_basic.py,NA,7,HY,['HY'],['0']
-18,ocr_basic.py,NA,8,,[],[]
-19,ocr_basic.py,NA,9,HY,['HY'],['0']
-20,ocr_basic.py,NA,10,HY,['HY'],['0']
-21,ocr_basic.py,NA,11,HY,['HY'],['0']
-22,ocr_basic.py,NA,12,"|
+11°77
+",NA,NA,ssd
+11,tesseract_cli,NA,13,"40:44
+",NA,NA,ssd
+12,ocr_basic.py,NA,1,,[],[],ssd
+13,ocr_basic.py,NA,3,,[],[],ssd
+14,ocr_basic.py,NA,4,"177:1..11..
+1.177","['177:1..11..', '1.177']","['15', '9']",ssd
+15,ocr_basic.py,NA,5,"9
+1
+9
+-1°
+0444 0
+1.3","['9', '1', '9', '-1°', '0444', '0', '1.3']","['52', '71', '15', '33', '56', '92', '69']",ssd
+16,ocr_basic.py,NA,6,"177:1..11..
+1.177","['177:1..11..', '1.177']","['15', '9']",ssd
+17,ocr_basic.py,NA,7,0:44,['0:44'],['96'],ssd
+18,ocr_basic.py,NA,8,40:44,['40:44'],['67'],ssd
+19,ocr_basic.py,NA,9,0:44,['0:44'],['96'],ssd
+20,ocr_basic.py,NA,10,0:44,['0:44'],['96'],ssd
+21,ocr_basic.py,NA,11,0:44,['0:44'],['96'],ssd
+22,ocr_basic.py,NA,12,"177:1...11...1
 
-LI-1","['|', 'LI-1']","['34', '0']"
-23,ocr_basic.py,NA,13,,[],[]
-24,ocr.py,thresh,1,,[],[]
-25,ocr.py,thresh,3,,[],[]
-26,ocr.py,thresh,4,"e000
-LJI-""1 1","['e000', 'LJI-""1', '1']","['33', '0', '63']"
-27,ocr.py,thresh,5,"aX
-<
--
-J
--— ®
-IJ","['aX', '<', '-', 'J', '-—', '®', 'IJ']","['48', '38', '78', '77', '39', '47', '46']"
-28,ocr.py,thresh,6,"e000
-LJI-""1 1","['e000', 'LJI-""1', '1']","['33', '0', '63']"
-29,ocr.py,thresh,7,HY,['HY'],['0']
-30,ocr.py,thresh,8,,[],[]
-31,ocr.py,thresh,9,HY,['HY'],['0']
-32,ocr.py,thresh,10,HY,['HY'],['0']
-33,ocr.py,thresh,11,HY,['HY'],['0']
-34,ocr.py,thresh,12,"|
+11°77","['177:1...11...1', '11°77']","['36', '33']",ssd
+23,ocr_basic.py,NA,13,40:44,['40:44'],['67'],ssd
+24,ocr.py,thresh,1,,[],[],ssd
+25,ocr.py,thresh,3,,[],[],ssd
+26,ocr.py,thresh,4,"177:1..11..
+1.177","['177:1..11..', '1.177']","['15', '9']",ssd
+27,ocr.py,thresh,5,"9
+1
+9
+-1°
+0444 0
+1.3","['9', '1', '9', '-1°', '0444', '0', '1.3']","['52', '71', '15', '32', '56', '92', '69']",ssd
+28,ocr.py,thresh,6,"177:1..11..
+1.177","['177:1..11..', '1.177']","['15', '9']",ssd
+29,ocr.py,thresh,7,0:44,['0:44'],['96'],ssd
+30,ocr.py,thresh,8,40:44,['40:44'],['67'],ssd
+31,ocr.py,thresh,9,0:44,['0:44'],['96'],ssd
+32,ocr.py,thresh,10,0:44,['0:44'],['96'],ssd
+33,ocr.py,thresh,11,0:44,['0:44'],['96'],ssd
+34,ocr.py,thresh,12,"177:1...11...1
 
-LI-1","['|', 'LI-1']","['35', '0']"
-35,ocr.py,thresh,13,,[],[]
-36,ocr.py,blur,1,,[],[]
-37,ocr.py,blur,3,,[],[]
-38,ocr.py,blur,4,"e000
-LJI-""1 1","['e000', 'LJI-""1', '1']","['30', '0', '62']"
-39,ocr.py,blur,5,"aX
-<
--
-J
--— ®
-IJ","['aX', '<', '-', 'J', '-—', '®', 'IJ']","['48', '32', '68', '77', '41', '47', '39']"
-40,ocr.py,blur,6,"e000
-LJI-""1 1","['e000', 'LJI-""1', '1']","['30', '0', '62']"
-41,ocr.py,blur,7,HY,['HY'],['0']
-42,ocr.py,blur,8,,[],[]
-43,ocr.py,blur,9,HY,['HY'],['0']
-44,ocr.py,blur,10,HY,['HY'],['0']
-45,ocr.py,blur,11,HY,['HY'],['0']
-46,ocr.py,blur,12,"|
+11°77","['177:1...11...1', '11°77']","['36', '34']",ssd
+35,ocr.py,thresh,13,40:44,['40:44'],['67'],ssd
+36,ocr.py,blur,1,,[],[],ssd
+37,ocr.py,blur,3,,[],[],ssd
+38,ocr.py,blur,4,"177:1..11..
+1.177","['177:1..11..', '1.177']","['15', '14']",ssd
+39,ocr.py,blur,5,"9
+1
+9
+-1°
+0444 0
+1.3","['9', '1', '9', '-1°', '0444', '0', '1.3']","['46', '71', '25', '33', '55', '92', '69']",ssd
+40,ocr.py,blur,6,"177:1..11..
+1.177","['177:1..11..', '1.177']","['15', '14']",ssd
+41,ocr.py,blur,7,0:44,['0:44'],['96'],ssd
+42,ocr.py,blur,8,40:44,['40:44'],['67'],ssd
+43,ocr.py,blur,9,0:44,['0:44'],['96'],ssd
+44,ocr.py,blur,10,0:44,['0:44'],['96'],ssd
+45,ocr.py,blur,11,0:44,['0:44'],['96'],ssd
+46,ocr.py,blur,12,"177:1...11...1
 
-LJI-1","['|', 'LJI-1']","['33', '0']"
-47,ocr.py,blur,13,,[],[]
+11°77","['177:1...11...1', '11°77']","['36', '32']",ssd
+47,ocr.py,blur,13,40:44,['40:44'],['67'],ssd

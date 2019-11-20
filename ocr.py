@@ -1,8 +1,9 @@
-# USAGE: python ocr.py --image [FILE] --preprocess [blur, thresh] --psm [0-13]
+# USAGE: python ocr.py --image [FILE] --preprocess [blur, thresh] --psm [0-13] --lang [language]
 #
 # python ocr.py --image images/example_01.png 
 # python ocr.py --image images/example_02.png  --preprocess blur
 # python ocr.py --image images/example_02.png  --preprocess blur --psm 3
+# python ocr.py --image images/example_02.png  --preprocess blur --psm 3 --lang ssd
 # import the necessary packages
 from PIL import Image
 import pytesseract
@@ -10,7 +11,7 @@ import argparse
 import cv2
 import os
 
-def process_image(image_file, process_type, psm_value):
+def process_image(image_file, process_type, psm, language):
     # load the example image and convert it to grayscale
     image = cv2.imread(image_file)
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -29,12 +30,12 @@ def process_image(image_file, process_type, psm_value):
 
     # write the grayscale image to disk as a temporary file so we can
     # apply OCR to it
-    filename = os.getcwd() + "/tmp/{}.png".format(os.getpid())
+    filename = os.getcwd() + os.path.sep + "tmp" + os.path.sep + "{}.png".format(os.getpid())
     cv2.imwrite(filename, gray)
 
     # load the image as a PIL/Pillow image, apply OCR, and then delete
     # the temporary file
-    config = ('--tessdata-dir "tessdata_best" -l eng --oem 1 --dpi 72 --psm ' + psm_value)
+    config = ('--tessdata-dir "tessdata_best" --oem 1 --dpi 72 --psm {} -l {}'.format(psm, language))
     text = pytesseract.image_to_string(Image.open(filename), config=config, output_type='dict')
     data = pytesseract.image_to_data(Image.open(filename), config=config, output_type='dict')
     os.remove(filename)
@@ -48,18 +49,21 @@ def process_image(image_file, process_type, psm_value):
 if __name__ == '__main__':
     # construct the argument parse and parse the arguments
     ap = argparse.ArgumentParser()
-    ap.add_argument("-i", "--image",
+    ap.add_argument("--image",
                     required=True,
                     help="path to input image to be OCR'd")
-    ap.add_argument("-p", "--preprocess",
+    ap.add_argument("--preprocess",
                     default="thresh",
                     help="type of preprocessing to be done")
-    ap.add_argument("-m", "--psm",
+    ap.add_argument("--psm",
                     default="3",
                     help="Page segmentation mode")
+    ap.add_argument("--lang",
+                    default="eng",
+                    help="language")
     args = vars(ap.parse_args())
 
-    text, data = process_image(args["image"], args["preprocess"], args["psm"])
+    text, data = process_image(args["image"], args["preprocess"], args["psm"], args["lang"])
     d = '{' + '\n'.join(str(' '+repr(k) + ': ' + str(v)) for k,v in data.items()).strip() + '}'
     print(text['text'])
     print(d)
