@@ -1,0 +1,93 @@
+,tool,filter,psm,ocr_text,predicted_text,confidence_score
+0,tesseract_cli,NA,1,,NA,NA
+1,tesseract_cli,NA,3,,NA,NA
+2,tesseract_cli,NA,4,"e000
+LJI-""1 1
+",NA,NA
+3,tesseract_cli,NA,5,"aX
+<
+-
+J
+-— ®
+IJ
+",NA,NA
+4,tesseract_cli,NA,6,"e000
+LJI-""1 1
+",NA,NA
+5,tesseract_cli,NA,7,"HY
+",NA,NA
+6,tesseract_cli,NA,8,,NA,NA
+7,tesseract_cli,NA,9,"HY
+",NA,NA
+8,tesseract_cli,NA,10,"HY
+",NA,NA
+9,tesseract_cli,NA,11,"HY
+",NA,NA
+10,tesseract_cli,NA,12,"|
+
+LI-1
+",NA,NA
+11,tesseract_cli,NA,13,,NA,NA
+12,ocr_basic.py,NA,1,,[],[]
+13,ocr_basic.py,NA,3,,[],[]
+14,ocr_basic.py,NA,4,"e000
+LJI-""1 1","['e000', 'LJI-""1', '1']","['33', '0', '63']"
+15,ocr_basic.py,NA,5,"aX
+<
+-
+J
+-— ®
+IJ","['aX', '<', '-', 'J', '-—', '®', 'IJ']","['48', '38', '78', '77', '38', '48', '46']"
+16,ocr_basic.py,NA,6,"e000
+LJI-""1 1","['e000', 'LJI-""1', '1']","['33', '0', '63']"
+17,ocr_basic.py,NA,7,HY,['HY'],['0']
+18,ocr_basic.py,NA,8,,[],[]
+19,ocr_basic.py,NA,9,HY,['HY'],['0']
+20,ocr_basic.py,NA,10,HY,['HY'],['0']
+21,ocr_basic.py,NA,11,HY,['HY'],['0']
+22,ocr_basic.py,NA,12,"|
+
+LI-1","['|', 'LI-1']","['34', '0']"
+23,ocr_basic.py,NA,13,,[],[]
+24,ocr.py,thresh,1,,[],[]
+25,ocr.py,thresh,3,,[],[]
+26,ocr.py,thresh,4,"e000
+LJI-""1 1","['e000', 'LJI-""1', '1']","['33', '0', '63']"
+27,ocr.py,thresh,5,"aX
+<
+-
+J
+-— ®
+IJ","['aX', '<', '-', 'J', '-—', '®', 'IJ']","['48', '38', '78', '77', '39', '47', '46']"
+28,ocr.py,thresh,6,"e000
+LJI-""1 1","['e000', 'LJI-""1', '1']","['33', '0', '63']"
+29,ocr.py,thresh,7,HY,['HY'],['0']
+30,ocr.py,thresh,8,,[],[]
+31,ocr.py,thresh,9,HY,['HY'],['0']
+32,ocr.py,thresh,10,HY,['HY'],['0']
+33,ocr.py,thresh,11,HY,['HY'],['0']
+34,ocr.py,thresh,12,"|
+
+LI-1","['|', 'LI-1']","['35', '0']"
+35,ocr.py,thresh,13,,[],[]
+36,ocr.py,blur,1,,[],[]
+37,ocr.py,blur,3,,[],[]
+38,ocr.py,blur,4,"e000
+LJI-""1 1","['e000', 'LJI-""1', '1']","['30', '0', '62']"
+39,ocr.py,blur,5,"aX
+<
+-
+J
+-— ®
+IJ","['aX', '<', '-', 'J', '-—', '®', 'IJ']","['48', '32', '68', '77', '41', '47', '39']"
+40,ocr.py,blur,6,"e000
+LJI-""1 1","['e000', 'LJI-""1', '1']","['30', '0', '62']"
+41,ocr.py,blur,7,HY,['HY'],['0']
+42,ocr.py,blur,8,,[],[]
+43,ocr.py,blur,9,HY,['HY'],['0']
+44,ocr.py,blur,10,HY,['HY'],['0']
+45,ocr.py,blur,11,HY,['HY'],['0']
+46,ocr.py,blur,12,"|
+
+LJI-1","['|', 'LJI-1']","['33', '0']"
+47,ocr.py,blur,13,,[],[]
