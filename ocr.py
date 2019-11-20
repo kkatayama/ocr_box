@@ -48,13 +48,13 @@ def process_image(image_file, process_type, psm, language):
 
 if __name__ == '__main__':
     # construct the argument parse and parse the arguments
-    ap = argparse.ArgumentParser()
+    ap = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter)
     ap.add_argument("--image",
                     required=True,
                     help="path to input image to be OCR'd")
     ap.add_argument("--preprocess",
                     default="thresh",
-                    help="type of preprocessing to be done")
+                    help="thresh: preprocess using threshold method\nblur: preprocess using blur method")
     ap.add_argument("--psm",
                     default="3",
                     help="Page segmentation mode")
