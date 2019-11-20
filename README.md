@@ -11,7 +11,7 @@ $ python ocr_test.py
 ```YAML
 $ python ocr_basic.py -h
 ```
-```YAML
+> ```YAML
 usage: ocr_basic.py [-h] --image IMAGE [--psm PSM] [--lang LANG]
 
 optional arguments:
